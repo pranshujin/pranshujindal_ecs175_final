@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.visualization {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust layout for side text */
+  background: white;
+  padding: 20px; /* Add padding for better spacing */
+  position: relative; /* Position relative for positioning buttons */
+}
+
+.side-text {
+  width: 300px; /* Slightly increase the width */
+  margin-right: 40px; /* Move it further to the right */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px; /* Increase padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.side-text h1 {
+  font-size: 24px; /* Increase the title size */
+  margin-bottom: 15px;
+  color: #0077cc; /* A blue title color */
+}
+
+.side-text p {
+  font-size: 16px; /* Increase paragraph font size */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px; /* Move it closer to the control panel */
+  left: 50px; /* Align horizontally with the text box */
+  display: flex;
+  gap: 50px; /* Space between the buttons */
+}
+
+.randomize-btn, .reset-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.randomize-btn:hover, .reset-btn:hover {
+  background-color: #0056b3;
+}
+
+.controls-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="range"] {
+  width: 150px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}
